@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fa41b814fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Users/administrator/Documents/Projects/FCC/projects/ProductPage/css/main.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+                <div id="logo-div">
+                    <img id="header-img" src="https://img.icons8.com/nolan/64/000000/music.png">
+                </div>
+                <div id="nav-div">
+                    <nav id="nav-bar">
+                        <ul id="nav-list">
+                            <li><a class="nav-link" href="#home">Home</a></li>
+                            <li><a class="nav-link" href="#service">Our Service</a></li>
+                            <li><a class="nav-link" href="#price">Pricing</a></li>
+                            <li><a class="nav-link" href="#signup">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <span class="anchor" id="home"></span>
+        <div id="page-content">
+            <div id="intro-div">
+                <div id="intro-title" class="section-title">
+                    <h1>MainStream</h1>
+                    <p>Music For Everyone!</p>
+                </div>
+                <div id="intro-img">
+                    <img id="title-img" src="/Users/administrator/Documents/Projects/FCC/projects/ProductPage/img/listen_img.svg" alt="illustration">
+                </div>
+            </div>
+            <div id="video-div">
+                <div id="video-title" class="section-title">
+                    <span id="service" class="anchor"></span>
+                    <h2>How it works</h2>
+                    <p>Learn more about MainStream</p>
+                </div>
+                <div id="product-video">
+                    <iframe id="video" src="https://www.youtube.com/embed/kRr9LQ7mZ_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="pricing-div">
+                <div id="pricing-title" class="section-title">
+                    <span class="anchor" id="price"></span>
+                    <h2>Pricing</h2>
+                    <p>What streaming do you need?</p>
+                </div>
+                <div id="pricing-cards">
+                    <div id="pc-1" class="pricing-card">
+                        <div id="title-pc-1" class="pc-title">
+                            <i class="far fa-smile fa-3x"></i>
+                            <h3>Basic</h3>
+                        </div>
+                        <div id="desc-pc-1" class="pc-desc">
+                            <ul id="pc-1-list" class="pc-list">
+                                <li>Unlimited Streaming</li>
+                                <li>Shuffled music</li>
+                                <li>Podcasts</li>
+                            </ul>
+                        </div>
+                        <div id="pc-1-cost" class="pc-cost">
+                            <p>Free</p>
+                        </div>
+                    </div>
+                    <div id="pc-2" class="pricing-card">
+                        <div id="title-pc-2" class="pc-title">
+                            <i class="far fa-grin fa-3x"></i>
+                            <h3>Premium</h3>
+                        </div>
+                        <div id="desc-pc-2" class="pc-desc">
+                            <ul id="pc-2-list" class="pc-list">
+                                <li><strong>Unlimited Ad-Free Streaming</strong></li>
+                                <li>All music on demand</li>
+                                <li>Podcasts</li>
+                            </ul>
+                        </div>
+                        <div id="pc-2-cost" class="pc-cost">
+                            <p>$5/mo</p>
+                        </div>
+                    </div>
+                    <div id="pricing-card-3" class="pricing-card">
+                        <div id="title-pc-3" class="pc-title">
+                        <i class="far fa-grin-hearts fa-3x"></i>
+                        <h3>On-The-Go</h3>
+                        </div>
+                        <div id="desc-pc-3" class="pc-desc">
+                            <ul id="pc-3-list" class="pc-list">
+                                <li><strong>Unlimited Ad-Free Streaming</strong></li>
+                                <li>Unlimited downloads</li>
+                                <li>Music on demand</li>
+                            </ul>
+                        </div>
+                        <div id="pc-3-cost" class="pc-cost">
+                            <p>$10/mo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="newsletter-div">
+                <div id="newsletter-title" class="section-title">
+                    <h2>Sign-up</h2>
+                    <p>Try MainStream now!</p>
+                </div>
+                <div id="form-div">
+                    <span id="signup" class="anchor"></span>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="First Name">
+
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Email Address">
+                        <div id="button-div">
+                            <input id="submit" type="submit" value="Submit">
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

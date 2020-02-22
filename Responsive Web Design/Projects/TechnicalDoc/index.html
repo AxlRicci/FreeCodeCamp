@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Technical Documentation</title>
+    <link rel="stylesheet" href="/Users/administrator/Documents/Projects/FCC/projects/TechnicalDoc/css/main.css">
+</head>
+<body>
+    <!-- <div id="mob-nav">
+        <nav id="mob-navbar">
+            <div id="mob-navbar-header-div">
+                <header id="mob-title-header"><h1 id="navbar-title">HTML Element Docs</h1></header>
+            </div>
+            <div id="mob-navbar-list-div">
+                <ul id="mob-navbar-list">
+                    <li><a class="nav-link" href="#a">a</a></li>
+                    <li><a class="nav-link" href="#abbr">abr</a></li>
+                    <li><a class="nav-link" href="#address">address</a></li>
+                    <li><a class="nav-link" href="#area">area</a></li>
+                    <li><a class="nav-link" href="#article">article</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div> -->
+    <div id="navbar-div">
+        <nav id="navbar">
+            <div id="navbar-header-div">
+                <header id="title-header"><h1 id="navbar-title">HTML Element Docs</h1></header>
+            </div>
+            <div id="navbar-list-div">
+                <ul id="navbar-list">
+                    <li><a class="nav-link" href="#a">a</a></li>
+                    <li><a class="nav-link" href="#abbr">abbr</a></li>
+                    <li><a class="nav-link" href="#address">address</a></li>
+                    <li><a class="nav-link" href="#area">area</a></li>
+                    <li><a class="nav-link" href="#article">article</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main id="main-doc">
+        <section id="a" class="main-section">
+            <header id="sec1-title-div" class="sec-title">
+                <h2>a</h2>
+            </header>
+            <div id="sec1-nav-div" class="sec-nav">
+                <ol>
+                    <li><a href="#s1-at">Attributes</a></li>
+                    <li><a href="#s1-ex">Examples</a></li>
+                </ol>
+            </div>
+            <div id="sec1-c1-div" class="sec-code">
+                <h3 id="s1-c1">Attributes</h3>
+                <table class="tbl-prop"> 
+                    <tbody> 
+                        <tr>
+                            <th scope="row" class="t-head">Content categories</th>
+                            <td class="t-data">Flow content, phrasing content, interactive content, palpable content.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted content</th>
+                            <td class="t-data">Transparent, containing either flow content (excluding interactive content) or phrasing content.</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Tag omission</th> 
+                            <td class="t-data">None, both the starting and ending tag are mandatory.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted parents</th>
+                            <td class="t-data">Any element that accepts phrasing content, or any element that accepts flow content, but always excluding <a> elements (according to the logical principle of symmetry, if <a> tag, as a parent, can not have interactive content, then the same <a> content can not have <a> tag as its parent).</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Permitted ARIA roles</th>
+                            <td class="t-data">Any</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">DOM Interface</th>
+                            <td class="t-data">HTMLElement</td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+            </div>
+            <div id="sec1-c2-div" class="sec-code">
+                <h3 id="s1-c2">Examples</h3>
+                <p>Linking to an external location</p>
+                <pre data-language="html" class="example-pre">
+    <span class="token comment">&lt;!-- anchor linking to external file --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.mozilla.com/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    External Link
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                </pre>
+                <p>Result</p>
+                <code>
+                    <a href="https://www.mozilla.com/">External Link</a>
+                </code>
+                
+            </div>
+        </section>
+        <section id="abbr" class="main-section">
+            <header id="sec2-title-div" class="sec-title">
+                <h2>abbr</h2>
+            </header>
+            <div id="sec2-nav-div" class="sec-nav">
+                <ol>
+                    <li><a href="#s2-at">Attributes</a></li>
+                    <li><a href="#s2-ex">Examples</a></li>
+                </ol>
+            </div>
+            <div id="sec2-c1-div" class="sec-code">
+                <h3 id="s2-c1">Attributes</h3>
+                <table class="tbl-prop"> 
+                    <tbody> 
+                        <tr>
+                            <th scope="row" class="t-head">Content categories</th>
+                            <td class="t-data">	Flow content, phrasing content, palpable content</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted content</th>
+                            <td class="t-data">Phrasing content</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Tag omission</th> 
+                            <td class="t-data">None, both the starting and ending tag are mandatory.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted parents</th>
+                            <td class="t-data">Any element that accepts phrasing content</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Permitted ARIA roles</th>
+                            <td class="t-data">Any</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">DOM Interface</th>
+                            <td class="t-data">HTMLElement</td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+            </div>
+            <div id="sec2-c2-div" class="sec-code">
+                <h3 id="s2-c2">Examples</h3>
+                <p>To mark up an abbreviation without providing an expansion or description, 
+                    simply use <abbr> without any attributes, as seen in this example.</p>
+                <code>Enter code here</code>
+                <p>Result</p>
+                <code>Using <abbr>HTML</abbr> is fun and easy!</code>
+            </div>
+        </section>
+        <section id="address" class="main-section">
+            <header id="sec3-title-div" class="sec-title">
+                <h2>address</h2>
+            </header>
+            <div id="sec3-nav-div" class="sec-nav">
+                <ol>
+                    <li><a href="#s3-at">Attributes</a></li>
+                    <li><a href="#s3-ex">Examples</a></li>
+                </ol>
+            </div>
+            <div id="sec3-c1-div" class="sec-code">
+                <h3 id="s3-c1">Attributes</h3>
+                <table class="tbl-prop"> 
+                    <tbody> 
+                        <tr>
+                            <th scope="row" class="t-head">Content categories</th>
+                            <td class="t-data">Flow content, palpable content.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted content</th>
+                            <td class="t-data">PFlow content, but with no nested address element, 
+                                no heading content (hgroup, h1, h2, h3, h4, h5, h6),
+                                no sectioning content (article, aside, section, nav),
+                                and no header or footer element.</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Tag omission</th> 
+                            <td class="t-data">None, both the starting and ending tag are mandatory.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted parents</th>
+                            <td class="t-data">Any element that accepts flow content, 
+                                but always excluding address elements (according to the logical principle of symmetry,
+                                if address tag, as a parent, can not have nested address element, then the same address 
+                                content can not have address tag as its parent).</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Permitted ARIA roles</th>
+                            <td class="t-data">None</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">DOM Interface</th>
+                            <td class="t-data">HTMLElement Prior to Gecko 2.0 (Firefox 4), Gecko implemented
+                                this element using the HTMLSpanElement interface</td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+            </div>
+            <div id="sec3-c2-div" class="sec-code">
+                <h3 id="s3-c2">Examples</h3>
+                <p>This example demonstrates the use of address to demarcate the contact information for an article's author.</p>
+                <code>Enter Code Here</code>
+                <p>Result</p>
+                <code>Result code</code>
+                <p>Although it renders text with the same default styling as the i or em elements, it is more appropriate to use 
+                    address when dealing with contact information, as it conveys additional semantic information.</p>
+            </div>
+        </section>
+        <section id="area" class="main-section">
+            <header id="sec4-title-div" class="sec-title">
+                <h2>area</h2>
+            </header>
+            <div id="sec4-nav-div" class="sec-nav">
+                <ol>
+                    <li><a href="#s4-at">Attributes</a></li>
+                    <li><a href="#s4-ex">Examples</a></li>
+                </ol>
+            </div>
+            <div id="sec4-c1-div" class="sec-code">
+                <h3 id="s4-c1">Attributes</h3>
+                <table class="tbl-prop"> 
+                    <tbody> 
+                        <tr>
+                            <th scope="row" class="t-head">Content categories</th>
+                            <td class="t-data">Flow content, phrasing content.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted content</th>
+                            <td class="t-data">None, it is an empty element.</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Tag omission</th> 
+                            <td class="t-data">Must have a start tag and must not have an end tag.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted parents</th>
+                            <td class="t-data">	Any element that accepts phrasing content. 
+                                The area element must have an ancestor map, but it need not be a direct parent.</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Permitted ARIA roles</th>
+                            <td class="t-data">None</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">DOM Interface</th>
+                            <td class="t-data">HTMLAreaElement</td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+            </div>
+            <div id="sec4-c2-div" class="sec-code">
+                <h3 id="s4-c2">Examples</h3>
+                <p>Defines circular hotspot locations on the image at the designated coordinates.</p>
+                <code>Add code here</code>
+                <p>Result</p>
+                <code>
+                    <map name="primary">
+                        <area shape="circle" coords="75,75,75" href="left.html" alt="Click to go Left">
+                        <area shape="circle" coords="275,75,75" href="right.html" alt="Click to go Right">
+                    </map>
+                    <img usemap="#primary" src="http://placehold.it/350x150" alt="350 x 150 pic">
+                </code>
+            </div>
+        </section>
+        <section id="article" class="main-section">
+            <header id="sec5-title-div" class="sec-title">
+                <h2>article</h2>
+            </header>
+            <div id="sec5-nav-div" class="sec-nav">
+                <ol>
+                    <li><a href="#s5-at">Attributes</a></li>
+                    <li><a href="#s5-ex">Examples</a></li>
+                </ol>
+            </div>
+            <div id="sec5-c1-div" class="sec-code">
+                <h3 id="s5-c1">Attributes</h3>
+                <table class="tbl-prop"> 
+                    <tbody> 
+                        <tr>
+                            <th scope="row" class="t-head">Content categories</th>
+                            <td class="t-data">Flow content, sectioning content, palpable content.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted content</th>
+                            <td class="t-data">	Flow content.</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Tag omission</th> 
+                            <td class="t-data">None, both the starting and ending tag are mandatory.</td> 
+                        </tr> 
+                        <tr> 
+                            <th scope="row" class="t-head">Permitted parents</th>
+                            <td class="t-data">Any element that accepts flow content. Note that an article element must not be a descendant of an address element.</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">Permitted ARIA roles</th>
+                            <td class="t-data">application, document, feed, main, presentation, region</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="t-head">DOM Interface</th>
+                            <td class="t-data">HTMLElement</td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+            </div>
+            <div id="sec5-c2-div" class="sec-code">
+                <h3 id="s5-c2">Examples</h3>
+                <p>Defines an article section of the document</p>
+                <code>Enter code here</code>
+                <p>Result</p>
+                <code>Resultant code here</code>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

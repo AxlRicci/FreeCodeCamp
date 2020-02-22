@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>SurveyForm</title>
+</head>
+<body>
+    <div id="main">
+        <div class="left-div">
+            <div id="img-div">
+                <img id="feedback-img" src="/Users/administrator/Documents/Projects/FCC/SurveyForm/Img/undraw_feedback.svg" alt="website feedback illustration">
+            </div>
+        </div>
+        <div class="right-div">
+            <form id="survey-form" action="">
+                <div class="form-info">
+                    <h1 id="title" class="title">How Were We?</h1>
+                    <p id="description" class="description">Tell us about your experience!</p>
+                </div>
+                <fieldset>
+                    <legend>User Details</legend>
+                        <div class="form-section user-details">
+                            <div id="name-div" class="u-input">
+                                <p class="q-label">
+                                    <label id="name-label" class="dn-input" for="name">Name</label>
+                                </p>
+                                    <input id="name" type="text" name="user_name" placeholder="First Name" required>
+                            </div>
+                            <div id="email-div" class="u-input">
+                                <p class="q-label">
+                                    <label id="email-label" class="dn-input" for="email">Email</label>
+                                </p>
+                                    <input id="email" type="email" name="user_email" placeholder="Email Address" required>
+                            </div>
+                            <div id="age-div" class="u-input">
+                                <p class="q-label">
+                                    <label id="number-label" class="dn-input" for="number">Age</label>
+                                </p>
+                                    <input id="number" type="number" name="user_age" placeholder="Age" min="1" max="150">
+                            </div>
+                        </div>
+                </fieldset>
+                <p class="q-label s-label">Dine-in or Drive-thru?</p>
+                <fieldset>
+                    <legend>Service Type</legend>
+                    <div class="form-section s-type">
+                        <div class="s-list-div">
+                            <ul class="list s-type">
+                                <li>
+                                    <p class="li-label">
+                                        <label for="drive-thru">
+                                            <input id="drive-thru" type="radio" name="service-type" value="drive-thu">Drive-thru
+                                        </label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="li-label">
+                                        <label for="dine-in">
+                                            <input id="dine-in" type="radio" name="service-type" value="dine-in">Dine-in
+                                        </label>
+                                    </p>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </fieldset>
+                <p class="prod-title q-label s-label">What did you order?</p>
+                <fieldset>
+                    <legend>Product type</legend>
+                    <div class="form-section prod-type">
+                        <ul class="list prod-type">
+                            <li>
+                                <p class="li-label">
+                                        <input id="coffee" type="checkbox" name="coffee" value="coffee">
+                                        <label for="coffee">Coffee</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="li-label">
+                                        <input id="tea" type="checkbox" name="tea" value="tea">
+                                        <label for="tea">Tea</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="li-label">
+                                        <input id="sandwich" type="checkbox" name="sandwich" value="sandwich">
+                                        <label for="sandwich">Sandwich</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="li-label">
+                                        <input id="cookie" type="checkbox" name="cookie" value="cookie">
+                                        <label for="cookie">Cookie</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="li-label">
+                                    <input id="donut" type="checkbox" name="donut" value="donut">
+                                    <label for="donut">Donut</label>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <p class="q-label s-label reccomend">Would you recommend us to a friend?</p>
+                <fieldset>
+                    <legend>Recommed us to a friend?</legend>
+                    <div class="form-section recommend">
+                            <label for="dropdown">
+                                <select name="recommend" id="dropdown">
+                                    <option value="">-- Choose an Option --</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="Maybe">Maybe</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </label>
+                    </div>
+                </fieldset>
+                <div id="comments-div">
+                    <p class="q-label s-label">
+                        <label for="comments">
+                            <textarea id="comments" name="comments" placeholder="Additional comments"></textarea>
+                        </label>
+                    </p>
+                </div>
+                <div id="button-div">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --nav-bg-color: #442B68;
+    --nav-link-color: #C0ADDB;
+    --nav-logo-text-color: #FFFFFF;
+    --welcome-bg-color: #FFFFFF;
+    --lg-title-color: #FFFFFF;
+    /* --lg-title-color: #5E3699; */
+    --med-title-color: #191C1F;
+    --subtitle-color: #5A6269;
+    --text-color: #191C1F;
+    --tile-bdr-color: #D7D7D7 ;
+    --tile-btn-color: #0961FF;
+    --footer-bg-color: #442B68;
+
+
+}
+
+
+h1 {
+    font-size: calc(32px + 0.25vw);
+    color: var(--lg-title-color);
+}
+
+h2 {
+    font-size: calc(24px + 0.25vw);
+    color: var(--med-title-color);
+}
+
+h3 {
+    font-size: calc(20px + 0.25vw);
+    color: var(--med-title-color);
+}
+
+h4 {
+    font-size: calc(18px + 0.25vw);
+    color: var(--med-title-color);
+}
+
+p {
+    font-size: calc(16px + 0.25vw);
+    color: var(--text-color);
+}
+
+
+@media (min-width: 320px) {
+    .anchor {
+        display: block;
+        position: relative;
+        top: -95px;
+        visibility: hidden;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto 100vh auto 10vh;
+        grid-template-areas: 
+        "nav"
+        "welcome"
+        "projects"
+        "footer";
+        margin: 0px;
+    }
+
+    #navigation {
+        position: sticky;
+        top: 0px;
+        background-color: var(--nav-bg-color);
+        display: grid;
+        grid-area: nav;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "title links";
+        padding: 10px;
+    }
+
+    #navbar-div {
+        grid-area: links;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #nav-title p {
+        color: white;
+    }
+
+    #navbar-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        list-style-type: none;
+        padding: 0px;
+
+    }
+
+    #navbar-list li {
+        margin: 0px 20px 0px 0px;
+    }
+    
+    .nav-link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        font-weight: bold;
+    }
+
+    #welcome-section {
+        grid-area: welcome;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(52,29,85);
+        background: linear-gradient(180deg, rgba(52,29,85,1) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    #welcome-title-div {
+        text-align: center;
+    }
+
+    #welcome-subtitle {
+        color: white;
+    }
+
+    .ql-div {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .ql-div p {
+        margin: 5px 0px 0px 0px;
+        color: white;
+    }
+
+    .icon.wlcm {
+        color: white;
+    }
+
+    .ql-link:visited {
+        color: black;
+    }
+
+    #welcome-quick-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #projects {
+        grid-area: projects;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "ptitle"
+        "ptiles";
+    }
+
+    #projects-title-div {
+        grid-area: ptitle;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    #projects-tile-div {
+        grid-area: ptiles;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .project-tile {
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px 0px;
+        width: 95%;
+    }
+
+    .ptile-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .ptile-text {
+        margin: 15px;
+    }
+    
+    .ptile-gh {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .footer-gh {
+        margin: auto auto;
+        width: fit-content;
+    }
+    
+    .footer-icon {
+        color: white;
+    }
+
+    #footer {
+        display: grid;
+        grid-area: footer;
+        background-color: var(--nav-bg-color);
+    }
+}
+
+@media (min-width: 768px) {
+    #nav-title {
+        padding-left: 30px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    #projects-tile-div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .project-tile {
+        width: 20%;
+        margin: 20px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 1920px;
+        margin: 0px auto;
+    }
+
+}
+
